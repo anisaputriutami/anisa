@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+        <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Nisa</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <p>
+      <table>
+        <tr>
+          <td rowspan="12" width="150px">
+            <img src="ut.jpg" alt="" width="200px" height="350px">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Nama </b></td> 
+          <td style="text-align: left;">: Anisa Putri Utani</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>NIM</b></td>
+          <td style="text-align: left;">: 16323046</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>TTL</b></td>
+          <td style="text-align: left;">: Bogor, 4 Februari 2005</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Alamat</b></td>
+          <td style="text-align: left;">: JL. SAM RATULANGI</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Jenis Kelamin</b></td>
+          <td style="text-align: left;">: Perempuan</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Status</b></td>
+          <td style="text-align: left;">: Mahasiswa</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Jurusan</b></td>
+          <td style="text-align: left;">: Manajemen Informatika</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Alamat Gmail</b></td>
+          <td style="text-align: left;">: anisaputriutami@gmail.com</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>No Telpon</b></td>
+          <td style="text-align: left;">: 082239193475</td>
+        </tr>
+      </table>
+    </p>
+  </section>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src= "SPOT.mp3"></audio> <br>
+    <video controls autoplay src="pd.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Hai saya anisah putri utami, biasa dipanggil nisa, saya lahir dibogor pada tanggal 04 februari 2005, saya merupakan anak tunggal dari orangtua kandung saya,saya dibesarkan dibandung dan untuk saat ini saya sedang berkuliah dikota fakfak papua barat,tepatnya dikampus politeknik negeri fakfak,dikampus politeknik negeri fakfak ini saya mengambil jurusan manajemen informatika, untuk saat ini saya baru menginjak semester 2.</p>
+
+    <p> Salah satu alasan saya masuk jurusan manajemen informatika yaitu adanya Kombinasi antara manajemen dan teknologi. Jurusan Manajemen Informatika menggabungkan aspek manajemen bisnis dengan teknologi informasi. Ini memberikan kesempatan untuk mengembangkan pemahaman tentang bagaimana teknologi dapat digunakan dalam konteks bisnis, dan bagaimana manajemen dapat memanfaatkan nya secara efektif.</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Sensasi Luar Angkasa Di Galactic Glow Bandung</p>
+    <iframe src="https://www.cnnindonesia.com/gaya-hidup/20240721192020-272-1123822/foto-sensasi-luar-angkasa-di-galactic-glow-bandung" height="200px" width="300px" frameborder="15px"></iframe>
+    <p>Jakarta, CNN Indonesia -- Galactic Glow merupakan pameran instalasi bertema ruang angkasa yang hadir mewarnai Paris Van Java (PVJ) Mall, Bandung selama Juli-September 2024.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Anisaputriutami</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
